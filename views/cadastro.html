@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheey" href="/style/cadastro.css">
+  <title>Cadastrar</title>
+</head>
+
+<body>
+  <header class="menu">
+    <section class="menu-content main-content">
+      <a href="/#"><img id="logo" src="/img-icon/LogoTigerFinal.png" alt="Logo"></a>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="quemSomos.html">Quem somos</a></li>
+          <li><a href="#footer">Fale conosco</a></li>
+          <li><a href="entrar.html">Entrar</a></li>
+          <li><button class="button"><a href="cadastro.html">Cadastre-se</a></button></li>
+          <!--Arrumar o botão e a ancoragem // Inverter a ordem-->
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main class="blue-content">
+    <section class="intro-content cadastro">
+      <aside class="images">
+        <img src="../img-section/image-intro.svg" alt="Start building">
+      </aside>
+      <div class="black-bg form__group field">
+        <form>
+          <fieldset >
+          <legend>Crie sua conta hoje!</legend>
+          <input type="text" placeholder="Nome:" class="campo_nome" id="nome"><br><br>
+          <input type="email" placeholder="e-mail:" class="campo_email" id="email"><br><br>
+          <input type="password" placeholder="Senha:" class="senha" id="senha"><br><br>
+          <input type="password" placeholder="Confirmar Senha:" class="confirmarSenha" id="confirmarSenha"><br><br>
+          <button type="button" class="btn btn-secondary">Cadastrar</button>
+          <button type="button"><a href="entrar.html" class="btn btn-secondary">Já tenho conta</a></button>
+          </fieldset>  
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
+
+<!-- <body> 
+  <main>
+    <div id="area">
+      <form method="post" action="/salvar.php" id="formulario" autocomplete="off">
+        <fieldset>
+          <legend>Cadastre-se aqui</legend>
+          Nome:<input type="text" class="campo_nome" id="nome"><br><br>
+          Email:<input type="email" class="campo_email" id="email"><br><br>
+          Senha:<input type="password" name="senha" id="senha"><br><br>
+
+          <button type="submit">Cadastrar</button>
+          <button type="submit"><a href="views/entrar.html">Já tenho cadastro!</a></button>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

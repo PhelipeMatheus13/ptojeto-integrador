@@ -1,0 +1,450 @@
+ /*#121926
+#63BBF2
+#3E6E8C
+#5A98BF
+#77DCF2*/
+
+/*Formatação geral do html*/
+
+:root{
+    --primary-color: #121926;
+    --second-color: #deedf7;   
+    --third-color: #93b3c7;
+    --fourth-color: #3E6E8C;
+    --fifth-color: yellow;
+    --white: #fff;
+    --gap: 3rem;
+  background: aliceblue;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: bold;
+}
+h2{
+    font-size: 4.5rem;
+}
+h3{
+    font-size: 3.5rem;
+}
+h4{
+    font-size: 2.5rem;
+}
+a{
+    text-decoration: none;
+}
+
+/*Formatação de classes que se repetem no html*/
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.blue-content{
+    background-image: url('../img-bg/image-bg.svg');
+    background-position: center center;
+    color: var(--white);
+}
+
+.white-content{
+    color: var(--primary-color);
+}
+
+/*.distance-top h1{
+    padding-top: 3rem;
+}*/
+
+#logo{
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+}
+
+.min-height {
+    min-height: 100vh;
+}
+
+.images img{
+    max-width: 100%;
+    height: auto;
+}
+
+.button{
+    border: 2px solid var(--fourth-color);
+    border-radius: 25px;
+    padding: 1.2rem 2.5rem;
+    background-color: var(--third-color);
+    text-transform: uppercase;
+    margin-top: 3rem;
+    transition: all 500ms ease-in-out;
+}
+
+.button:hover{
+    background-color: var(--fourth-color);
+}
+
+.menu-nav .button a{
+    padding: 0;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.menu .menu-content .menu-nav .button a:hover{
+    color: var(--primary-color);
+}
+
+.button2{
+    border: 2px solid rgb(196, 173, 79);
+    border-radius: 25px;
+    padding: 1.2rem 2.5rem;
+    background-color: rgb(253, 208, 23);
+    text-transform: uppercase;
+    margin-top: 3rem;
+    transition: .3s linear;
+    width: 25rem;
+}
+
+.button2:hover{
+    transform: scale(1.1);
+}
+
+.button2 a{
+    padding: 0;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.button3{
+    border: 2px solid var(--fourth-color);
+    border-radius: 25px;
+    padding: 1.2rem 2.5rem;
+    background-color: var(--third-color);
+    text-transform: uppercase;
+    margin-top: 3rem;
+    transition: all 500ms ease-in-out;
+    width: 25rem;
+}
+
+.button3:hover{
+    background-color: var(--fourth-color);
+}
+
+.button3 > a{
+    padding: 0;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+/*Formatação do menu*/
+
+.menu{
+    background-image: url('../img-bg/image-bg.svg');
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;   
+    padding-bottom: 0px;
+}
+
+.menu-content h1{
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.menu-content h1 a{
+    color: var(--white);
+}
+
+.menu-content ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-content ul li a{
+    display: block;
+    color: var(--second-color);
+    padding: 2rem;
+    margin-top: 3rem;
+    transition: all 500ms ease-in-out;
+}
+
+.menu-content ul li a:hover{
+    color: var(--fourth-color);
+}
+
+/*Formatação da intro*/
+
+.intro-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    align-items: center;
+    height: 100vh; /*Coloca a grid como tamanho total da tela, para alinhar no meio*/
+}
+
+.intro-text-content, .images{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.intro-text-content h1{
+    line-height: 1.2;
+}
+
+.quadrado-flutuante{
+    display: flex;
+    gap: var(--gap);
+    height: 15rem;
+}
+
+.quadrado{
+    height: 12rem;
+    width: 100%;
+    border: 1px solid var(--third-color);
+    border-radius: 8px;
+    margin-top: 3rem;
+    text-align: center;
+    transition: .3s linear;
+}
+
+.quadrado:hover{
+    transform: scale(1.1);
+    border: 1px solid #6dbeec;
+}
+
+.quadrado p{
+    margin-top: 1.3rem;
+}
+
+.quadrado .p-texto{
+    font-size: 1.3rem;
+    text-align: center;
+    /*color: var();*/
+}
+
+.quadrado p a{
+    color: var(--third-color);
+}
+
+/*Formatação da segunda parte*/
+
+.second-part-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--gap);
+    align-items: center;
+    height: 100vh; /*Coloca a grid como tamanho total da tela, para alinhar no meio*/
+}
+
+.second-part-content2{
+    display: flex;
+    align-items: center;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--gap);
+    align-items: center;
+    height: 100vh;
+
+.second-text-content, .images{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+#futuristic{
+    height: 50rem;
+}
+
+.quadrado2{
+    height: 30rem;
+    width: 100%;
+    border: 1px solid var(--third-color);
+    border-radius: 10px;
+    margin-top: 3rem;
+    text-align: center;
+    transition: .3s linear;
+}
+
+/*Formatação do Footer*/
+
+#footer {
+    height: 50vh;
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--gap);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  
+.divMaior{
+  w
+}
+  
+  .tableLogo{
+  color: #000000
+}
+
+.divLogo{
+  align-items: center;
+  text-align: center;
+  width : 33%;
+}
+
+.trLogoG{
+  /*color:#6b1149;*/
+  color: #b6b1ff;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  margin: 2px;
+}
+
+.logo{
+  font-size: 20px;
+  margin: 5px;
+}
+
+.trLogo1{
+   color: #cbc7ff;
+   align-items: center;
+  text-align: center;
+}
+
+.trLogo1{
+  color: #cbc7ff;
+   align-items: center;
+  text-align: center;
+}
+.trLogo2{
+  color: #e2e0ff;
+   align-items: center;
+  text-align: center;
+}
+.trLogo3{
+  color: #e2e0ff;
+   align-items: center;
+  text-align: center;
+}
+.trLogo4{
+  color: #dedbff;
+   align-items: center;
+  text-align: center;
+}
+.trLogo5{
+  color: #dedbff;
+   align-items: center;
+  text-align: center;
+}
+.trLogo6{
+  color: #e9e7fd;
+   align-items: center;
+  text-align: center;
+}
+.trLogo7{
+  color: #e9e7fd;
+   align-items: center;
+  text-align: center;
+}
+.trLogo8{
+  color: #f1f0ff;
+   align-items: center;
+  text-align: center;
+}
+.trLogo9{
+  color: #f1f0ff;
+   align-items: center;
+  text-align: center;
+}
+
+.nossasRedes{
+  margin: auto;
+  color: #b6b1ff;
+}
+
+.icone-color{
+  color:#fff;
+  margin: auto;
+}
+
+.icones{
+  
+  margin: auto;
+  color: #b6b1ff;
+}
+
+.contatos > a{
+  
+  margin: auto;
+  color: #b6b1ff;
+}
+
+.nossosContatos{
+   margin: auto;
+  color: #b6b1ff
+}
+
+/*CSS do cadastrar.hmtl*/
+
+#area{
+  position: relative;
+  left: 37%;
+  top: 29%;
+  width: 320px;
+  height: 270px;
+}
+
+#area #formulario{
+  position: absolute;
+  display: block;
+}
+
+fieldset{
+  width: 300px;
+  height: 250px;
+  background-color: #f1ff00;
+}
+
+legend{
+  font-style: bold;
+  font-family:"Segoe UI","Arial","Times New Roman";
+}
+
+#formulario textarea.msg {
+  
+}
+
+/* sintaxe media query  */
+@media screen and (max-width: 500px){
+/*   max width = tela menor que algum tamanho  */
+  #logo{
+  width: 40px;
+  height: 40px;
+  margin-top: 20px; }
+}
+
+
